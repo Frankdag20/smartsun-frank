@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SmartSun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYq-R9-ooH">
+                                <rect key="frame" x="103" y="257.5" width="208.5" height="62.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lightbulb.png" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-vx-udr">
+                                <rect key="frame" x="108" y="369" width="198" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="374" id="QEs-qt-gJf"/>
+                                    <constraint firstAttribute="width" constant="198" id="rdY-X0-KQx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ue7-gK-yrH">
+                                <rect key="frame" x="-33" y="303" width="482" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="361" id="CBh-LN-KuL"/>
+                                    <constraint firstAttribute="width" constant="482" id="NGH-m9-6we"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QOD-vx-udr" firstAttribute="top" secondItem="Ue7-gK-yrH" secondAttribute="bottom" constant="-295" id="2GD-0t-kDN"/>
+                            <constraint firstItem="Ue7-gK-yrH" firstAttribute="top" secondItem="BYq-R9-ooH" secondAttribute="bottom" constant="-17" id="7wr-n8-Ef5"/>
+                            <constraint firstItem="BYq-R9-ooH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E0o-ek-8vv"/>
+                            <constraint firstItem="Ue7-gK-yrH" firstAttribute="leading" secondItem="QOD-vx-udr" secondAttribute="trailing" constant="-339" id="OdI-mY-0pS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QOD-vx-udr" secondAttribute="bottom" constant="119" id="cbX-LZ-CUj"/>
+                            <constraint firstItem="QOD-vx-udr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ubB-74-6DU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightbulb.png" width="254" height="480"/>
+        <image name="sun.png" width="815" height="612"/>
+    </resources>
+</document>
